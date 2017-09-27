@@ -1,0 +1,21 @@
+---
+
+prometheus_rabbitmq_exporter_version: 0.20.0
+prometheus_rabbitmq_exporter_release_name: "rabbitmq_exporter-{{ prometheus_rabbitmq_exporter_version }}.linux-amd64"
+url: "https://github.com/kbudde/rabbitmq_exporter/releases/download/v{{ prometheus_rabbitmq_exporter_version }}/{{ prometheus_rabbitmq_exporter_release_name }}.tar.gz"
+
+prometheus_rabbitmq_exporter_config_flags:
+  'rabbit_url': 'http://localhost:15672'
+  'rabbit_user': 'guest'
+  'rabbit_password': 'guest'
+  'rabbit_user_file': ''
+  'rabbit_password_file': ''
+  'publish_port': '9090'
+  'output_format': 'TTY'
+  'log_level': 'info'
+  'cafile': 'ca.pem'
+  'skipverify': 'false'
+  'include_queues': '.*'
+  'skip_queues': '^$'
+  'rabbit_capabilities': 'no_sort,bert'
+  'rabbit_exporter': 'exchange,node,overview,queue'

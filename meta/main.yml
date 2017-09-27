@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Nick Walke
+  description: Ansible role for deploying the RabbitMQ Prometheus exporter
+  license: GPLv2
+  min_ansible_version: 2.0
+  platforms:
+    - name: Debian
+      versions:
+        - wheezy
+    - name: Ubuntu
+      versions:
+        - xenial
+        - zesty
+  galaxy_tags:
+    - monitoring
+
+dependencies:
+  - UnderGreen.prometheus-exporters-common

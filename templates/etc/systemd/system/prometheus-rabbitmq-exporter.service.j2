@@ -1,0 +1,15 @@
+[Unit]
+Description=Prometheus RabbitMQ Exporter
+After=network.target
+
+[Service]
+Type=simple
+User={{ prometheus_exporters_common_user }}
+Group={{ prometheus_exporters_common_group }}
+ExecStart={{ prometheus_exporters_common_root_dir }}/rabbitmq_exporter_current/rabbitmq_exporter
+
+SyslogIdentifier=prometheus_rabbitmq_exporter
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

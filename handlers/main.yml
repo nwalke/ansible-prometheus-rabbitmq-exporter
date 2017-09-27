@@ -1,0 +1,12 @@
+---
+
+- name: service reenable
+  command: systemctl reenable prometheus-rabbitmq-exporter.service
+
+- name: reinit rabbitmq exporter
+  command: initctl reload-configuration
+
+- name: restart rabbitmq exporter
+  service:
+    name: prometheus-rabbitmq-exporter
+    state: restarted
