@@ -1,6 +1,7 @@
 # Ansible Role: prometheus-rabbitmq-exporter
+[![Build Status](https://travis-ci.org/nwalke/ansible-prometheus-rabbitmq-exporter.svg?branch=master)](https://travis-ci.org/nwalke/ansible-prometheus-rabbitmq-exporter)
 
-An Ansible role that installs Prometheus Node Exporter on Ubuntu|Debian-based machines with systemd.
+An Ansible role that installs [Prometheus RabbitMQ Exporter](https://github.com/kbudde/rabbitmq_exporter) on Ubuntu|Debian-based machines with systemd.
 
 Based off the role by UnderGreen: https://github.com/UnderGreen/ansible-prometheus-node-exporter
 
