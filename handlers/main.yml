@@ -1,6 +1,6 @@
 ---
 
-- name: service reenable
+- name: rabbitmq exporter service reenable
   command: systemctl reenable prometheus-rabbitmq-exporter.service
 
 - name: restart rabbitmq exporter
