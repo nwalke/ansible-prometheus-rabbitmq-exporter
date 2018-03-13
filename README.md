@@ -15,7 +15,7 @@ Available variables are listed below, along with default values:
 ```yaml
 prometheus_rabbitmq_exporter_version: 0.20.0
 prometheus_rabbitmq_exporter_release_name: "rabbitmq_exporter-{{ prometheus_rabbitmq_exporter_version }}.linux-amd64"
-url: "https://github.com/kbudde/rabbitmq_exporter/releases/download/v{{ prometheus_rabbitmq_exporter_version }}/{{ prometheus_rabbitmq_exporter_release_name }}.tar.gz"
+prometheus_rabbitmq_exporter_url: "https://github.com/kbudde/rabbitmq_exporter/releases/download/v{{ prometheus_rabbitmq_exporter_version }}/{{ prometheus_rabbitmq_exporter_release_name }}.tar.gz"
 
 prometheus_rabbitmq_exporter_config_flags:
   'rabbit_url': 'http://localhost:15672'
