@@ -2,7 +2,7 @@
 
 - name: download prometheus rabbitmq exporter binary
   get_url:
-    url: "{{ url }}"
+    url: "{{ prometheus_rabbitmq_exporter_url }}"
     dest: "{{ prometheus_exporters_common_dist_dir }}/{{ prometheus_rabbitmq_exporter_release_name }}.tar.gz"
 
 - name: unarchive binary tarball
